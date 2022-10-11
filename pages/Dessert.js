@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Dessert() {
   const photoUrl =
@@ -17,10 +18,11 @@ export default function Dessert() {
       <Image
         src={photoUrl}
         alt="Picture of the pizza"
-        // width={500}
-        // height={300}
-        layout="responsive"
+        width={400}
+        height={250}
       />
+
+      <Link href="/">Back To Home</Link>
     </>
   );
 }

@@ -1,8 +1,10 @@
 import Image from "next/image";
+import Link from "next/link";
 import pizza from "../public/images/pizza.jpg";
+
 export default function Veggie() {
   return (
-    <div>
+    <>
       <h2>Veggie</h2>
       <p>
         Some Dummy Text Some Dummy Text Some Dummy TextSome Dummy Tex Some Dummy
@@ -14,10 +16,12 @@ export default function Veggie() {
       <Image
         src={pizza}
         alt="Picture of the pizza"
-        width={500}
-        height={300}
-        layout="responsive"
+        width={400}
+        height={250}
+        // layout="responsive"
       />
-    </div>
+
+      <Link href="/">Back To Home</Link>
+    </>
   );
 }
